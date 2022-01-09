@@ -1,0 +1,339 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+header h1 {
+    color: #D6000D;
+    font-size: 36px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    margin: 20px;
+    justify-content: space-around;
+    
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.login {
+    background-color: #D6000D;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 4px;
+}
+
+.primeira {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.primeira img {
+    max-width: 400px;
+}
+
+.primeira h1 {
+    font-size: 48px;
+    color: #D6000D;
+}
+
+.primeira .botao {
+    background-color: #D6000D;
+    color: white;
+    display: block;
+    width: 180px;
+    text-align: center;
+    padding: 10px;
+    border-style: none;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.segunda {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.segunda img {
+    max-width: 400px;
+}
+
+
+.segunda ul li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    list-style-type: "\2714";
+}
+
+.segunda li {
+    gap: 20px;
+}
+
+.terceira {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 100px;
+    align-items: center;
+    
+}
+
+.terceira h3{
+    font-size: 20px;
+}
+.form {
+    margin-top: 10px;
+}
+.terceira input {
+    font-size: 20px;
+    margin-right: 10px;
+    padding:10px;
+    border-style: none;
+    background-color: rgb(209, 207, 207);
+    border-radius: 4px;
+}
+
+.terceira button {
+    background-color: #D6000D;
+    font-size: 20px;
+    padding:10px 20px;
+    border-style: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.quarta {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+}
+
+.lista {
+    justify-items: right;
+}
+
+.case {
+    display: grid;
+    background-color: rgb(209, 207, 207);
+    grid-template-columns: 1fr 3fr;
+    border-radius: 4px;
+    padding: 20px;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.quarta .nome {
+    align-items: center;
+    margin-top: 5px;
+    text-align: center;
+    justify-content: start;
+
+}
+
+.case img {
+    text-align: center;
+    margin-left: 10px;
+    width: 100px;
+}
+
+.case .empresa {
+    font-weight: bold;
+}
+
+.texto span {
+    font-weight: bold;
+}
+.nome {
+    justify-items: center;
+}
+
+footer {
+    background-color: black;
+}
+
+.rodape {
+    max-width: 1200px;
+    color: white;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    display: flex;
+    
+}
+
+.social img {
+    margin: 5px;
+    border-radius: 4px;
+    background-color: red;
+    
+}
+
+
+
+@media (max-width: 800px) { /*Traduz para: ABAIXO DE 800PX APLIQUE ISSO. Usado para responsividade*/
+    header {
+        flex-direction: column; /*Abaixo de 800px, muda a orientação do header (que era da direita pra esquerda - em linha - para coluna*/
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    header a {
+        background: #f5f5f5; 
+        padding: 10px 20px;       /*Nos celulares, o menu vai ficar com cara de "botão"*/
+        border-radius: 4px;
+
+    }
+    
+}
+@media (max-width: 590px) { /*Traduz para: ABAIXO DE 800PX APLIQUE ISSO. Usado para responsividade*/
+    .primeira {
+        grid-template-columns: 1fr;
+        max-width: 590px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+    }
+
+    .primeira img {
+        margin-bottom: 10px;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .primeira-texto {
+        text-align: center;
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    .primeira-texto h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    .primeira .primeira-texto a {
+        font-size: 15px;
+        padding: 5px 10px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .segunda {
+        grid-template-columns: 1fr;
+        max-width: 590px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .segunda ul li {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .segunda img {
+        display: none;
+    }
+
+    .terceira {
+        max-width: 590px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .terceira h3 {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .terceira #username {
+        font-size: 15px;
+    }
+
+    .terceira button {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 50px;
+    }
+
+    .quarta {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quarta .case {
+        gap: 0px;
+        margin-bottom: 5px;
+    }
+
+    footer {
+        background-color: black;
+        margin-top: 10px;
+    }
+    
+    .rodape {
+        max-width: 500px;
+        flex-direction: column;
+        color: white;
+        font-size: 12px;
+        margin: 0 auto;
+        display: flex;
+        
+        
+    }
+
+   
+
+
+    
+    
+}
