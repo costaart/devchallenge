@@ -6,9 +6,8 @@ Desafio retirado do site https://www.devchallenge.com.br/challenges/5ed47992adee
 
 Desafio criado por  <a href="https://github.com/Lorenalgm">Lorena</a> :)
 
-##Imagens
-####Idealização do Desafio
-![Desafio](imagens/desktop.png "Foto representando o desafio proposto.")
+## Imagens
 
-####Finalização
-![Tela desenvolvida por mim](imagens/final.jpg "Foto representando a realização do desafio.")
+#### Idealização do Desafio
+![Desafio](imagens/desktop.png "Foto representando o desafio realizado.")
+
